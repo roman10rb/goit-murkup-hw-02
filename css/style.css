@@ -1,8 +1,21 @@
-body{
-    font-family: Roboto, sans-serif;
-    color: #212121;
+:root{
+    --prime-color-text: #212121;
+    --web-part-inLogo-color: #2196F3;
+    --studio-part-inLogo-color: #000000;
+    --current-collor: #2196F3;
 }
 
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--prime-color-text);
+}
+ .studia.current{
+    color: var(--current-collor)
+}
+.portfolio.current{
+    color: var(--current-collor)
+}
+ /* -----------HEADER----------- */
 .logo {
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -13,10 +26,10 @@ body{
 }
 
 .logo-web {
-    color: #2196F3;
+    color: var(--web-part-inLogo-color);
 }
 .logo-studio{
-    color: #000000;
+    color: var(--studio-part-inLogo-color);
 }
 .nav {
  color: inherit;
@@ -30,15 +43,14 @@ body{
     line-height: calc(16/14);
     letter-spacing: 0.02em;
     text-decoration: none;
-    color: #212121;
+    color: inherit;
 }
 .nav-link:hover,
 .nav-link:focus{
     color: #2196F3;
     cursor: pointer;
 }
-.nav-kontakt{
-}
+
 
 .kontakt-list {
 list-style: none;
@@ -55,17 +67,14 @@ letter-spacing: 0.02em;
 }
 
 .kontakt-tel:hover,
-.kontakt-tel:focus{
-    cursor: pointer;
-    color: #2196F3;
-}
-
+.kontakt-tel:focus,
 .kontakt-mail:hover,
-.kontakt-mail:focus {
+.kontakt-mail:focus{
     cursor: pointer;
     color: #2196F3;
 }
 
+/* ----------------HERO----------------- */
 .hero {
     background-color: #2F303A;
 }
@@ -93,6 +102,9 @@ letter-spacing: 0.02em;
     letter-spacing: 0.06em;
     color: #FFFFFF;
 }
+
+/* --------------------ABOUT-------------------- */
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -142,9 +154,7 @@ letter-spacing: 0.02em;
 
 .about-item {}
 
-
-.team {}
-
+/* -----------------НАША КОМАНДА------------------ */
 .team-title {
     font-weight: 700;
     font-size: 36px;
@@ -152,9 +162,6 @@ letter-spacing: 0.02em;
     text-align: center;
     letter-spacing: 0.03em;
 }
-
-.team-list {}
-
 .team-item {
     list-style: none;
 }
@@ -166,7 +173,6 @@ letter-spacing: 0.02em;
     text-align: center;
     letter-spacing: 0.03em;
 }
-
 .team-text {
     font-size: 16px;
     line-height: calc(19/16);
@@ -174,6 +180,8 @@ letter-spacing: 0.02em;
     letter-spacing: 0.03em;
     color: #757575;
 }
+
+/*---------------------FOOTER-------------------  */
 
 .footer {
     background-color: #2F303A;
@@ -188,18 +196,11 @@ letter-spacing: 0.02em;
 }
 
 .footer-web {
-    color: #2196F3;
+    color: var(--web-part-inLogo-color);
 }
 
 .footer-studio {
     color: #FFFFFF;
-}
-
-.footer-address {
-
-}
-
-.footer-list {
 }
 
 .footer-item {
@@ -221,4 +222,46 @@ letter-spacing: 0.02em;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+
+/* ---------------------PORTFOLIO------------------- */
+
+.portfolio-list {
+    list-style: none;
+}
+.portfolio-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.portfolio-button:hover,
+.portfolio-button:focus{
+    background: #2196F3;
+    color: #FFFFFF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* --------------ПРИКЛАДИ ПРОЕКТІВ---------------- */
+.project-item {
+    list-style: none;
+}
+.project-link {
+    text-decoration: none;
+    color: inherit;
+}
+.project-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36/18);
+    letter-spacing: 0.06em;
+}
+.project-text {
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.03em;
+    color: #757575;
 }
