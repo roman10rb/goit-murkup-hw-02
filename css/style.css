@@ -3,6 +3,8 @@
     --web-part-inLogo-color: #2196F3;
     --studio-part-inLogo-color: #000000;
     --current-collor: #2196F3;
+    --hover-color:#2196F3;
+    --sub-prime-color-text: #757575;
 }
 
 body {
@@ -47,7 +49,7 @@ body {
 }
 .nav-link:hover,
 .nav-link:focus{
-    color: #2196F3;
+    color: var(--hover-color);
     cursor: pointer;
 }
 
@@ -63,7 +65,7 @@ font-weight: 500;
 font-size: 14px;
 line-height: calc(16/14);
 letter-spacing: 0.02em;
- color: #757575;
+ color: var(--sub-prime-color-text);
 }
 
 .kontakt-tel:hover,
@@ -71,7 +73,7 @@ letter-spacing: 0.02em;
 .kontakt-mail:hover,
 .kontakt-mail:focus{
     cursor: pointer;
-    color: #2196F3;
+    color: var(--hover-color);
 }
 
 /* ----------------HERO----------------- */
@@ -117,13 +119,9 @@ letter-spacing: 0.02em;
     clip-path: inset(50%);
     margin: -1px;
 }
-
-.main-list {}
-
 .main-item {
     list-style: none;
 }
-
 .main-title {
     font-weight: 700;
     font-size: 14px;
@@ -131,14 +129,12 @@ letter-spacing: 0.02em;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-
 .main-text {
     font-size: 14px;
     line-height: calc(24/14);
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--sub-prime-color-text);
 }
-.about {}
 
 .about-title {
     font-weight: 700;
@@ -151,8 +147,6 @@ letter-spacing: 0.02em;
 .about-list {
     list-style: none;
 }
-
-.about-item {}
 
 /* -----------------НАША КОМАНДА------------------ */
 .team-title {
@@ -178,7 +172,7 @@ letter-spacing: 0.02em;
     line-height: calc(19/16);
     text-align: center;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--sub-prime-color-text);
 }
 
 /*---------------------FOOTER-------------------  */
@@ -263,5 +257,5 @@ letter-spacing: 0.02em;
     font-size: 16px;
     line-height: calc(30/16);
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--sub-prime-color-text);
 }
